@@ -41,19 +41,20 @@ $grey: #313139;
         display: block;
         height: 24px;
         width: 24px;
-        right: 0;
-        z-index: 1;
+        top:0;
+        right: 4px;
+        z-index: 1047;
         opacity: 0;
         cursor: pointer;
     }
 
     // hamburger menu
     .hamburger-lines {
+        position: relative;
         height: 24px;
         width: 40px;
-        z-index: 2;
+        z-index: 1046;
         display: flex;
-        margin-left: .5rem;
         flex-direction: column;
         justify-content: space-between;
         background-color: transparent;
@@ -106,10 +107,11 @@ $grey: #313139;
 .menu-items {
     position: fixed;
     display: flex;
+    padding-top: 120px;
     width: 100%;
     max-width: 100%;
     height: 100vh;
-    top: 120px;
+    top: 0;
     left: 0;
     z-index: 1045;
     flex-direction: column;
