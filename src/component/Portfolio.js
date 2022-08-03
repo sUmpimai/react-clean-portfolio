@@ -3,12 +3,10 @@ import projectsData from '../mock.json';
 
 const Portfolio = () => {
     return (
-    <section className='portfolio'>
-      <div className='container'>
-          <h2>My Works.</h2>
-      </div>
+    <div className='portfolio container'>
+      <h2>My Works.</h2>
       <PortfolioList items={projectsData.Projects}/>  
-    </section>
+    </div>
     );
 }
 

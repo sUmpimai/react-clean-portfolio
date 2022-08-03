@@ -51,10 +51,10 @@
         "brand": "Apple",
         "category": "smartphones",
         "thumbnail": "...",
-        "images": "03_img.jpg"
+        "images": "floral.jpg"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "iPhone 9",
         "description": "An apple mobile which is nothing like apple",
         "price": 549,
@@ -64,7 +64,7 @@
         "brand": "Apple",
         "category": "smartphones",
         "thumbnail": "...",
-        "images": "03_img.jpg"
+        "images": "02_img.jpg"
       }
     ]
 }
