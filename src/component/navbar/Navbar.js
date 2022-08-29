@@ -16,9 +16,7 @@ const Navbar = ({position}) => {
         }
    
     });
-    }, [position]);
-
-    
+    }, [position]); 
     
     return (
         <header className={clsName}>
@@ -30,12 +28,14 @@ const Navbar = ({position}) => {
                     <span className="line line1"></span>
                     <span className="line line2"></span>
                     <span className="line line3"></span>
-                </button>  
-                <ul className="navbar-items container">
-                    <li className='nav-item'><a href="home">Work</a></li>
-                    <li className='nav-item'><a href="about">About</a></li>
-                    <li className='nav-item'><a href="contact">contact</a></li>
-                </ul>
+                </button> 
+                <div className="navbar-items"> 
+                    <ul className="container">
+                        <li className='nav-item'><a href="home">Work</a></li>
+                        <li className='nav-item'><a href="about">About</a></li>
+                        <li className='nav-item'><a href="contact">contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         </header>
