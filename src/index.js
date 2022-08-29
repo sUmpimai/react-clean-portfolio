@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './style.scss';
+import './assets/style/style.scss';
+import './assets/fonts/DynaPuff-VariableFont_wdth,wght.ttf';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

@@ -1,42 +1,41 @@
-$grey: #313139;
+@import '../../assets/style/varibles.scss';
+
+//
+// Navbar style
 
 .navbar {
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
+    justify-content: flex-start;
+    padding: 0.75rem 0px;
 
-    a {
+    &-logo {
+        padding: 0;
+        margin-right: 0.5rem;
+        font-size: 40px;
+        color: $dark-grey;
         text-decoration: none;
-        color: inherit;
+        white-space: nowrap;
+
+        &:hover {
+            color: $dark-grey;
+        }
+    }
+
+    &>.container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
-.nav-logo {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 0.5rem;
-    font-size: 1.25rem;
-    color: $grey;
-    text-decoration: none;
-    white-space: nowrap;
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.navbar>.container {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-menu-container {
+.navbar-items-container {
     position:relative;
 
-    .checkbox {
+    .form-input {
         position: absolute;
         display: block;
         height: 24px;
@@ -65,27 +64,27 @@ $grey: #313139;
             height: 3px;
             width: 100%;
             background: #0e2431;
-        }
+        
+            &1 {
+                transform-origin: 0% 0%;
+                transition: transform 0.4s ease-in-out;
+            }
 
-        .line1 {
-            transform-origin: 0% 0%;
-            transition: transform 0.4s ease-in-out;
-        }
+            &2 {
+                transition: transform 0.2s ease-in-out;
+            }
 
-        .line2 {
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .line3 {
-            transform-origin: 0% 100%;
-            transition: transform 0.4s ease-in-out;
+            &3 {
+                transform-origin: 0% 100%;
+                transition: transform 0.4s ease-in-out;
+            }
         }
 
     }
 
-    // input checked 
+    // when input checked 
     input[type="checkbox"]:checked {
-        ~ .menu-items {
+        ~ .navbar-items {
             transform: translateX(0);
         }
 
@@ -104,7 +103,8 @@ $grey: #313139;
     
 }
 
-.menu-items {
+.navbar-items {
+    margin: 0;
     position: fixed;
     display: flex;
     padding-top: 120px;
@@ -113,6 +113,7 @@ $grey: #313139;
     height: 100vh;
     top: 0;
     left: 0;
+    overflow: hidden;
     z-index: 1045;
     flex-direction: column;
     text-align: right;   
@@ -127,5 +128,12 @@ $grey: #313139;
             font-weight: 500;
         }
 }
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+  
 
 

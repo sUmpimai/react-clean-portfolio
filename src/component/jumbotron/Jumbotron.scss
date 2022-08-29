@@ -1,0 +1,66 @@
+/// 
+///  hero intro
+///
+@-webkit-keyframes moveColor {
+    0% {
+    background-color: #ebf2ff;
+    }
+    25% {  
+    background-color: #d2e7d6;
+    }
+    50% {
+    background-color: #ffe5d9;
+    }
+    75% {
+    background-color: #f6e5eb;
+    }
+    100% {
+    background-color: #f4f2f9;
+    }
+    100% {
+    background-color: #ebf2ff;
+    }
+  }
+  
+  @keyframes moveColor {
+    0% {
+      background-color: #ebf2ff;
+    }
+    25% {  
+      background-color: #d2e7d6;
+    }
+    50% {
+      background-color: #ffe5d9;
+    }
+    75% {
+      background-color: #f6e5eb;
+    }
+    100% {
+      background-color: #f4f2f9;
+    }
+    100% {
+      background-color: #ebf2ff;
+    }
+  } 
+
+  .bg-random-color {
+    -webkit-animation: moveColor 15s linear infinite;
+    animation: moveColor 15s linear infinite;
+    -webkit-transition: 2s;
+    transition: 2s;
+    min-height: 700px;
+    position:relative;
+  }
+
+
+.intro-text {
+
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+  
+    &-inner {
+      position:absolute;
+      top: 30%;
+    }
+}

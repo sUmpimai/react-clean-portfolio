@@ -1,16 +1,16 @@
 import React from 'react';
-import Header from './component/Header.js';
-import Portfolio from './component/Portfolio.js';
-import Footer from './component/Footer.js';
-import Contact from './component/Contact.js';
-import Intro from './component/Intro.js';
+import Worklist from './pages/work/WorkList.js';
+import Footer from './pages/Footer.js';
+import Contact from './pages/Contact.js';
+import Jumbotron from './component/jumbotron/Jumbotron.js';
+import Navbar from './component/navbar/Navbar.js';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <Intro/>
-    <Portfolio/>
+    <>  
+    <Navbar position={'fixed'}/>
+    <Jumbotron/>
+    <Worklist/>
     <Contact/>
     <Footer/>
     </>

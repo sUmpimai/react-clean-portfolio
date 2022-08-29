@@ -1,0 +1,25 @@
+@import '../../assets/style/varibles.scss';
+
+.form-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgba(0,0,0,.25);
+
+    &[type=checked] {
+        border-radius: 0.25em;
+    }
+    
+    &[type=radio] {
+        border-radius: 50%;
+    }
+
+    &:checked {
+        background-color: $blue;
+        border-color: $blue;
+    }
+}
